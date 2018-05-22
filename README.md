@@ -35,7 +35,7 @@ log.fatal('fatal');
 
 ## Plugins
 - Additional functionality can be added to this logger in the form of plugins which are provided during instantiation.
-- For example, if you wanted to send certain log messages to slack, you can make use of the [slack plugin]() like so:
+- For example, if you wanted to send certain log messages to slack, you can make use of the [slack plugin](https://github.com/mistermoe/logger-nodejs-slack-plugin) like so:
 
 ```js
 const Logger = require('logger-nodejs');
