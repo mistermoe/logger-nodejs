@@ -1,0 +1,20 @@
+{
+    "name": "logger-nodejs",
+    "version": "1.0.0",
+    "description": "A simple extensible logging lib for nodejs",
+    "main": "src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mistermoe/logger-nodejs"
+    },
+    "keywords": [
+        "logger",
+        "nodejs"
+    ],
+    "author": "Moe Jangda",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mistermoe/logger-nodejs/issues"
+    },
+    "homepage": "https://github.com/mistermoe/logger-nodejs"
+}
