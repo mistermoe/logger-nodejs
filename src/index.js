@@ -32,6 +32,7 @@ class Logger {
         this.SELECTED_LEVEL = LOG_LEVELS[logLevel.toLowerCase()];
         this.name = opts.name;
         this.plugins = opts.plugins;
+        this.output = console.log;
 
 
         // Create a function for each log level that is greater than or equal to the selected log level.
@@ -54,14 +55,14 @@ class Logger {
                 text += ` ${JSON.stringify(opts.metadata)}`;
             }
 
-            console.log(text);
+            this.output(text);
 
             // run all attached plugins
             for (let plugin of this.plugins) {
                 try {
                     plugin.run({ text, level, levelValue, opts });
                 } catch (e) {
-                    console.log('plugin error:', e);
+                    this.output('plugin error:', e);
 
                 }
             }
